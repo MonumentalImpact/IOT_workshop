@@ -15,3 +15,23 @@ There are other kits available, some much larger than this one. Any ESP32 kit wi
 
 [Addressable LED strip](https://www.amazon.com/BTF-LIGHTING-WS2812B5M30LB65-BTF-LIGHTING-WS2812B-IC-RGB-5050SMD-Pure-Gold-Individual-Addressable-LED-Strip-High-Quality-16-4FT-150LED-30LED-m-Flexible-Full-Color-IP65-DC5V-for-DIY-Chasing-Color-Project-No-Adapter-or-Controller/dp/B01CDTEJBG/ref=sw_ttl_d_sspa_dk_huc_pt_expsub_5?_encoding=UTF8&pd_rd_i=B01CDTEDZI&pd_rd_w=y0xRK&content-id=amzn1.sym.421156cc-ae17-4608-955b-a8d126cb098e&pf_rd_p=421156cc-ae17-4608-955b-a8d126cb098e&pf_rd_r=C7H25Z6W7ER95YY9H908&pd_rd_wg=vStWn&pd_rd_r=758f8a35-323d-4487-aeec-cde40238692e&sp_csd=d2lkZ2V0TmFtZT1zcF9odWNfbXJhaQ&th=1)
 Any WS2812B compatible LED will work - this one isn't special.
+
+## Workshop outline
+
+### Introduction to IOT
+
+### Setup
+
+### Intro to micropython
+
+### Simple buttons and LEDs
+
+### Other sensors
+
+### Addressable LEDs
+
+### Next steps
+1. Home automation
+2. MQTT
+3. Robots
+4. Reactive/animated art
