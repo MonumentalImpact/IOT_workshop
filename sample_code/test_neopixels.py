@@ -19,3 +19,6 @@ for _ in range(5):
         np[n] = (255,0,0)
         np.write()
         sleep(0.01)
+        
+np.fill((0,0,0))
+np.write()
