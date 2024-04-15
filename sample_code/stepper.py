@@ -1,5 +1,5 @@
 from time import sleep_ms
-from machine import Pin
+from machine import Pin, Timer
 
 # only tested for uln2003
 class Stepper:
@@ -50,20 +50,22 @@ class Stepper:
         # Initialize all to 0
         self.reset()
         
-    def step(self, count):
+    def step(self, count, delay=None):
         """Rotate count steps. a negative count means backwards"""
         direction = 1 if count > 0 else -1
+        if delay == None:
+            delay = self.delay
         for x in range(abs(count)):
             for bit in self.mode[::direction]:
                 self.pin1(bit[0])
                 self.pin2(bit[1])
                 self.pin3(bit[2])
                 self.pin4(bit[3])
-                sleep_ms(self.delay)
+                sleep_ms(delay)
         self.reset()
         
-    def angle(self, r):
-    	self.step(int(self.FULL_ROTATION * r / 360))
+    def angle(self, r, delay=None):
+    	self.step(int(self.FULL_ROTATION * r / 360), delay)
     	
     def reset(self):
         # Reset to 0, no holding, these are geared, you can't move them
@@ -71,3 +73,4 @@ class Stepper:
         self.pin2(0) 
         self.pin3(0) 
         self.pin4(0)
+ 
