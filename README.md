@@ -1,4 +1,3 @@
-# *DRAFT*
 # IOT_workshop
 ## Overview
 Student repository for a workshop on the Internet of Things. 
@@ -29,6 +28,8 @@ Any WS2812B compatible LED will work - this one isn't special.
 ### Other sensors
 
 ### Addressable LEDs
+
+### Challenge exercises
 
 ### Next steps
 1. Home automation

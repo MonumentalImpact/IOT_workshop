@@ -3,9 +3,9 @@ from neopixel import NeoPixel
 from time import sleep
 
 npixels = 30
-np = NeoPixel(Pin(27, Pin.OUT), npixels)   # create NeoPixel driver on GPIO0 for 8 pixels
+np = NeoPixel(Pin(27, Pin.OUT), npixels)   # create NeoPixel driver 
 
-np[0] = (0, 255, 255) # set the first pixel to white
+np[0] = (0, 255, 255) # set the first pixel 
 np.write()              # write data to all pixels
 
 for n in range(256):
