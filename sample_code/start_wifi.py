@@ -12,9 +12,10 @@
 # ap.active(True)         # activate the interface
 # wlan.config(reconnects=n)
 
+from time import sleep
 
 
-def do_connect(hostname=None):
+def wifi_connect(hostname=None):
     import network
     if hostname is not None:
         network.hostname(hostname)
@@ -24,8 +25,14 @@ def do_connect(hostname=None):
     if not wlan.isconnected():
         print('connecting to network...')
         wlan.connect('art-iot', 'artisfun')
+        tries = 0
         while not wlan.isconnected():
-            pass
+            sleep(15)
+            tries += 1
+            if tries > 8 :
+                print('failed to connect to network')
+                break
+            
     print('network config:', wlan.ifconfig())
 
-# do_connect('hutson-iot')
+wifi_connect()
