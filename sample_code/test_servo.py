@@ -9,8 +9,8 @@ max_angle = 180
 servos.append( Servo( pin=23, freq=50, min_us=500, max_us=2500, angle=max_angle) )
 
 #for MS24-F servo, white=signal, red=+5v(4.8-6.8V;2.1-2.7A), black=GND
-max_angle = 270
-servos.append( Servo( pin=22, freq=50, min_us=500, max_us=2500, angle=max_angle) )
+# max_angle = 270
+# servos.append( Servo( pin=22, freq=50, min_us=500, max_us=2500, angle=max_angle) )
 
 def test_servo(s):
     #rotate through full range in 5 seconds

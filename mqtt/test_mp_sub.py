@@ -24,7 +24,8 @@ def main(server="localhost"):
         # Then need to sleep to avoid 100% CPU usage (in a real
         # app other useful actions would be performed instead)
         sleep(1)
-        if i > 120:
+        i+=1
+        if i > 30:
             break
 
     c.disconnect()
