@@ -3,6 +3,8 @@ from time import sleep
 
 # Publish test messages e.g. with:
 # mosquitto_pub -t foo_topic -m hello
+# or see esp32 example at
+# https://github.com/MonumentalImpact/IOT_workshop/blob/main/mqtt/test_mp_pub.py
 
 
 CLIENT_NAME = 'mp1' #must be set to the name of the esp32 being used

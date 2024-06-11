@@ -1,5 +1,6 @@
 import mip
-mip.install('https://github.com/MonumentalImpact/IOT_workshop/blob/main/libs/servo.py')
-mip.install('https://github.com/MonumentalImpact/IOT_workshop/blob/main/libs/ssd1306.py')
-mip.install('https://github.com/MonumentalImpact/IOT_workshop/blob/main/libs/stepper.py')
+
 mip.install('umqtt.simple')
+mip.install('github:MonumentalImpact/IOT_workshop/libs/servo.py')
+mip.install('github:MonumentalImpact/IOT_workshop/libs/ssd1306.py')
+mip.install('github:MonumentalImpact/IOT_workshop/libs/stepper.py')
